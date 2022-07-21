@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+
+body {
+    background-color:#f36bbf;
+    position: relative; /*centralização */
+    bottom: 50px;
+}
+
+label {
+    font-family: sans-serif;
+    color: black;
+    transform: scale(1.5);
+    position: relative;
+}
+
+#container-2 {
+    position: relative;
+    left: 580px;
+    top: 130px;
+    background: rgb(234, 228, 228);
+    border-radius: 10px;
+    padding: 10px 60px;
+    width: 400px;
+    height: 450px;
+    flex-direction: column;
+    box-shadow: 0 0 60px #b51da633;
+}
+
+#container-2 button{
+    position:relative;
+    top: 100px;
+    right: 125px;
+
+}
+
+textarea{
+    background: transparent;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+    transform: scale(1.5);
+    margin-bottom: 70px;
+    position: relative;
+    top: 40px;
+    cursor: pointer;
+}
+
+#encrypt-btn{ /*botao de cipitografar*/
+    transform: translate(20px, 120px) scale(2.4);
+
+}
+
+#copyToClipBoard{
+    transform: translate(230px,100px) scale(2.4);
+
+}
+#encrypt-btn, #copyToClipBoard{ /*Botão de criptografar e copiar o texto*/
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #6678a9;
+    color: white;
+    font-family: sans-serif;
+    font-size: 10px;
+    padding: 4px 8px ;
+    display: inline-block;
+
+   
+
+}
+
+#shiftInput{
+    transform: scale(2);
+    outline: none;
+    cursor: pointer;
+    border: 1px solid rgb(162, 157, 157);
+
+}
+#container-1 {
+    
+    background: white;
+    border-radius: 15px;
+    padding: 50px 60px;
+    width: 400px;
+    height: 50px;
+    box-shadow: 0 0 60px #b51da633;
+    transform: translate(580px, 100px);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+#container-1, #container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    left: 91px;
+}   
