@@ -1,42 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="utf-8" />
     <title>Caesar Cipher(Cartas criptografadas</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="imagem/favicon.ico.ico"
+      type="image/x-icon"
+    />
   </head>
   <body>
-    <div id="container-1">
+    <div id="campo-1">
       <h1>Cifra de Cesar</h1>
       <img id="img" src="imagem/Cifra_Cesar.jpeg" alt="Cifra de Cesar" />
     </div>
 
-    <div id="container-2">
+    <div id="campo-2">
       <!-- botão-->
       <label>
         <textarea
           type="text"
-          id="plainInput-1"
+          id="texto"
           placeholder="Digite a texto"
         ></textarea>
       </label>
-      <button id="encrypt-btn">Criptografar texto</button>
+      <button id="cript-btn">Criptografar texto</button>
 
-      <button id="copyToClipBoard">Copiar texto</button>
-      <input type="number" id="shiftInput" min="0" max="25" />
+      <button id="copia-btn">Copiar texto</button>
+      <input type="number" id="decod" min="0" max="25" />
 
       <br />
       <label>
         <textarea
           type="text"
-          id="encryptedInput-1"
+          id="criptografia-1"
           placeholder="Carta criptografada..."
         ></textarea>
       </label>
     </div>
-
-    <script>
-      console.log(document.getElementsByClassName("encrypt-btn")[0]);
-    </script>
   </body>
 </html>

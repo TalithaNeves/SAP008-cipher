@@ -2,23 +2,28 @@
 
 
 body {
-    background-color:;
+    background-image:url(imagem/fundo_carta.jpg);
+    background-repeat: no-repeat, repeat; /*não repetir img */
+  
     position: relative; /*centralização */
     bottom: 50px;
+    margin: auto;
+  
+    
 }
 
 label {
     font-family: sans-serif;
     color: black;
     transform: scale(1.5);
-    position: relative;
+    
 }
 
-#container-2 {
+#campo-2 {
     position: relative;
     left: 580px;
     top: 130px;
-    background: rgb(234, 228, 228);
+    background: rgb(236, 230, 230);
     border-radius: 10px;
     padding: 10px 60px;
     width: 400px;
@@ -27,7 +32,7 @@ label {
     box-shadow: 0 0 60px #b51da633;
 }
 
-#container-2 button{
+#campo-2 button{
     position:relative;
     top: 100px;
     right: 125px;
@@ -44,18 +49,19 @@ textarea{
     position: relative;
     top: 40px;
     cursor: pointer;
+    
 }
 
-#encrypt-btn{ /*botao de cipitografar*/
+#cript-btn{ /*botao de cipitografar*/
     transform: translate(20px, 120px) scale(2.4);
 
 }
 
-#copyToClipBoard{
+#copia-btn{
     transform: translate(230px,100px) scale(2.4);
 
 }
-#encrypt-btn, #copyToClipBoard{ /*Botão de criptografar e copiar o texto*/
+#cript-btn, #copia-btn{ /*Botão de criptografar e copiar o texto*/
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -70,27 +76,27 @@ textarea{
 
 }
 
-#shiftInput{
+#decod{
     transform: scale(2);
     outline: none;
     cursor: pointer;
     border: 1px solid rgb(162, 157, 157);
 
 }
-#container-1 {
+#campo-1 {
     
-    background: white;
+    background: rgb(236, 230, 230);
     border-radius: 15px;
     padding: 50px 60px;
     width: 400px;
     height: 50px;
-    box-shadow: 0 0 60px #b51da633;
+    box-shadow: #6678a9;
     transform: translate(580px, 100px);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor: pointer;
 }
 
-#container-1, #container-2{
+#campo-1, #campo-2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,3 +109,5 @@ textarea{
     position: relative;
     left: 91px;
 }   
+
+
