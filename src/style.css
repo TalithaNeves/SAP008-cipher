@@ -40,7 +40,7 @@ textarea{
     
 }
 
-#posicao{
+#tentacles{
     transform: scale(1.5);
     outline: none;
     cursor: pointer;
@@ -76,7 +76,7 @@ textarea{
  
 }   
 
-#btn_cifrar, #btn_decifrar{
+#cifrarBtn, #decifrarBtn{
     font-size: 20px;
     background:#dd0606;
     border-radius: 8px;

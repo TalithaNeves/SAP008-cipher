@@ -1,14 +1,14 @@
 import cipher from './cipher.js';  //interação manipulação do Dom
 
 
-    const cifrarButton = document.getElementById("cifrarButton");
-    cifrarButton.addEventeListener('click', cifra);
+    const cifrarBtn = document.getElementById("textoUser");
+    cifrarBtn.addEventListener('click',cifra);
 
 
 
-    function cifra () {
-        const textoUser = document.getElementById("textoUser").value;
-        const shift = document.getElementById("posicao").value;  
+    function cifra() {
+        const textoUser = document.getElementById("textoUser");
+        const shift = document.getElementById("tentacles");  
         let cripTexto = document.getElementById("cripTexto");
 
         if (shift == "" ||  textoUser == "" ) {
