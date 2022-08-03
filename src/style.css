@@ -10,6 +10,12 @@ body {
 
 }
 
+h1{
+    color: #dd0606;
+    box-shadow:5px 5px 5px #e15b5d;
+   
+    
+}
 #campo-2 {
     position: relative;
     left: 580px;

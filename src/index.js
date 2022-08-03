@@ -1,7 +1,7 @@
-import cipher from './cipher.js';  //interação manipulação do Dom
+import cipher from './cipher.js';  
 
 
-    const cifrarBtn = document.getElementById("textoUser");
+    const cifrarBtn = document.getElementById("cifrarBtn");
     cifrarBtn.addEventListener('click',cifra);
 
 
@@ -11,13 +11,38 @@ import cipher from './cipher.js';  //interação manipulação do Dom
         const shift = document.getElementById("tentacles");  
         let cripTexto = document.getElementById("cripTexto");
 
-        if (shift == "" ||  textoUser == "" ) {
+        
+        if (shift.value == "" ||  textoUser.value == "" ) {
             alert ( "Por favor digite com letras maiusculas e  escolha posiçao" );
         }
          
 
         else {
-            cripTexto.innerHTML = cipher.encode(parseInt(shift), textoUser);
+            cripTexto.innerHTML = cipher.encode(parseInt(shift.value), textoUser.value);
+
+         }
+
+    }
+
+
+    const decifrarBtn = document.getElementById("decifrarBtn");
+    decifrarBtn.addEventListener('click',decodifica);
+
+
+
+    function decodifica() {
+        const textoUser = document.getElementById("cripTexto");
+        const shift = document.getElementById("tentacles");  
+        let cripTexto = document.getElementById("cripTexto");
+
+      
+        if (shift.value == "" ||  textoUser.value == "" ) {
+            alert ( "Por favor digite com letras maiusculas e  escolha posiçao" );
+        }
+         
+
+        else {
+            cripTexto.innerHTML = cipher.decode(parseInt(shift.value), textoUser.value);
 
          }
 
