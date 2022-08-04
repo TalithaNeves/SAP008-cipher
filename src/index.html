@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title></head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cifra de Cesar</title>
 
   <head>
-    
     <title>Caesar Cipher(Cartas criptografadas</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -16,28 +15,22 @@
   </head>
   <body>
     <div id="campo-1">
-      <h1>Cifra de Cesar </h1><br>
-     
-
-      <img id="img" src="imagem/Cifra_Cesar.jpeg" alt="Cifra de Cesar"/>
+      <h1>Cifra de Cesar</h1>
+      <br />
+      <img id="img" src="imagem/Cifra_Cesar.jpeg" alt="Cifra de Cesar" />
     </div>
-   
+
     <div id="campo-2">
       <textarea id="textoUser" placeholder="Digite a texto"></textarea>
-      
+      <label for="tentacles">Escolha deslocamento:</label>
+      <br />
+      <input type="number" id="tentacles" name="tentacles" min="0" max="10" />
+      <br />
+      <textarea id="cripTexto" placeholder="Carta secreta..."></textarea>
 
-     <label for="tentacles">Escolha deslocamento:</label><br>
-
-    <input type="number" id="tentacles" name="tentacles"
-       min="0" max="10"> <br>
-     
-      <textarea id="cripTexto"  placeholder="Carta secreta..."></textarea>
       <div>
-     
         <button type="button" id="cifrarBtn">Cifra</button>
         <button type="button" id="decifrarBtn">decodifica</button>
-          
-        </button>
       </div>
     </div>
 

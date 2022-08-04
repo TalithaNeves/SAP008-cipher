@@ -22,7 +22,7 @@ const cipher = {
     
     decode:function(offset,texto){
         
-    if (typeof offset !== "number" || typeof texto !== "string") throw new TypeError();
+    if (typeof offset !== "number" || typeof texto !== "string") throw new TypeError(); 
 
     let descripetar = "";
 
@@ -30,7 +30,7 @@ const cipher = {
         let newOffset = (offset - (parseInt (offset / 26)) *26);
 
         if (texto.charCodeAt(i) >= 65 && texto.charCodeAt(i) <= 90) {
-            const charCode = ((((texto.charCodeAt(i) - 65) - newOffset) % 26) + 65);
+            const charCode = ((((texto.charCodeAt(i) - 90) - newOffset) % 26) + 90);
             descripetar = descripetar + String.fromCharCode(charCode);
         }
         else {
