@@ -32,11 +32,12 @@ a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
 ## 2. Resumo do projeto
   
-	Em carta cifrada foi a minha primeira aplicação web Bootcamp. Nela o usuário poderá cifrar e decifrar textos (cartas) indicando a chave de deslocamento ## offset.
+  Em carta cifrada foi a minha primeira aplicação web Bootcamp. Nela o usuário poderá cifrar e decifrar textos (cartas) indicando a chave de deslocamento  offset.
   É um tipo de cifra de substituição na qual cada letra do texto é substituída por outra, que se apresenta no alfabeto abaixo dela um número fixo de deslocamento. Por exemplo, com uma troca de três posições, A seria substituído por D, B se tornaria E, e assim por diante.
 
 Essa aplicação Web é direcionada a adultos que desejam de uma forma de escrever cartas onde somente os mesmos possam saber do conteúdo, sendo assim outras pessoas não possam ler, se tornando como uma mensagem secreta. Proporcionando momentos entre usuários decifrando mensagens ou cifrando usando certo número de deslocamento.
 
+  
 ## 3.Processo de decisão do protótipo
 
  Para iniciar o projeto fiz um esboço do desenho no Figma onde colocaria campos de texto, fotos e botões. Trabalhei com HTML, CSS E JAVASCRIPT, com espaço para função de deslocamento. Fiz um campo onde usuário digita o texto e outro para aparecer campo decifrado, contém também dois botões, um cifra o outro decifra texto.
